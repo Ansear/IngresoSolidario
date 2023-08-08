@@ -520,35 +520,3 @@ footer{
         padding: 30px 0px;
     }
 }
-/* DESPLEGABLE ESTUDIO DE EJEMPLO */
-/* .c:checked{
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background-image: url(https://cdn-icons-png.flaticon.com/128/3838/3838683.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.c:not(:checked){
-    appearance: none;
-    width: 10px;
-    height: 10px;
-    background-image: url(https://cdn-icons-png.flaticon.com/128/656/656979.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-input[type=checkbox]:checked + .v1+ #vm1{
-    display: block;
-}
-input[type=checkbox]:not(:checked) + .v1{
-    display: none;
-}
-
-input[type=checkbox]:checked +.mostrar{
-    display: block;
-}
-
-input[type=checkbox]:not(:checked) + .mostrar{
-    display: none;
-} */
