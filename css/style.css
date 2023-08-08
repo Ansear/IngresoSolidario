@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+:root{
+    --blueNav:#3669c9;
+    --blueBtn:#157ffb;
+    --blueC:#5aaff1;
+    --footer:#3c67c5;
+}
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+input[type="checkbox"]:checked{
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/up-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type="checkbox"]:not(:checked){
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navMob{
+    background-color: var(--blueNav);
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0px;
+    list-style: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.imgli{
+    width: 200px;
+    grid-column:1/2 ;
+    grid-row: 1/3;
+    text-align: center;
+}
+.imgli img{
+    width: 80%;
+}
+#item3{
+    display: none;
+}
+.ch{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    cursor: pointer;
+    appearance: none;
+    width: 40px !important;
+    height: 40px !important;
+    background-image: url(../images/hamburger-menu.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ch:not(:checked) + .des{
+    display: none;
+    width: 100%;
+}
+.ch:checked + .des{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+.des{
+    padding: 2px 0px;
+    grid-column: 1/3;
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+#btnC{
+    border:solid 1px rgb(168, 180, 229);
+    padding: 6px 20px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+#imgM{
+    object-fit: contain;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.hero{
+    position:relative;
+    padding: 0px;
+    grid-row: 1;
+    width: 100%;
+}
+.sec{
+    position: relative;
+    width: 100%;
+    height: 724px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    width: 85%;
+    height: 520px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 1px rgb(107, 105, 105);
+    border-radius: 15px;
+    padding: 10px;
+}
+form .btnS{
+    margin-top: 5px;
+}
+.heaF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heaF p{
+    width: 85%;
+    text-align: center;
+}
+.formu{
+    display: grid;
+    row-gap: 3px;
+    text-align: left;
+    width: 80%;
+}
+.btnS{
+    padding: 8px 20px;
+    border-radius: 12px;
+    border:1px solid var(--blueBtn);
+    background-color: var(--blueBtn);
+    color:white;
+    cursor: pointer;
+    width: 40%;
+}
+.divR{
+    display: grid;
+    row-gap: 10px;
+    text-align: center;
+    justify-items: center;
+}
+.divR p{
+    width: 95%;
+}
+
+.ingreso{
+    margin-top: 40px;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr .8fr;
+    width: 95%;
+}
+.ingreso h2{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.text{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: grid;
+    row-gap: 10px;
+}
+.ingD{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+.ingD img{    
+    width: 300px;
+}
+.entrega{
+    width: 95%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.c{
+    cursor: pointer;
+}
+
+
+.c:checked + .desp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.c:not(:checked) + .desp{
+    display: none;
+}
+.et{
+    cursor: pointer;
+}
+.etapas h2{
+    margin-bottom: 5px;
+}
+.eta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+}
+.eta div{
+    display: grid;
+    row-gap: 5px;
+    font-size: 18px;
+    margin: 5px 8px;
+}
+.bancos{
+    margin-top: 10px;
+}
+.banco{
+    width: 100%;
+}
+.banco img{
+    width: 200px;
+    object-fit: contain;
+}
+
+.preguntas{
+    text-align: center;
+}
+.preC:checked + .ver1{
+    display: flex;
+    flex-direction: column;
+}
+.preC:not(:checked) + .ver1{
+    display: none;
+}
+.preC2:checked + .ver2{
+    display: flex;
+    flex-direction: column;
+}
+.preC2:not(:checked) + .ver2{
+    display: none;
+}
+.preC3:checked + .ver3{
+    display: flex;
+    flex-direction: column;
+}
+.preC3:not(:checked) + .ver3{
+    display: none;
+}
+.p{
+    text-align: center;
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.p span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--blueC);
+    border-radius: 50%;
+}
+.tit{
+    font-weight: 900;
+}
+.masPre{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.masPre div{
+    width: 90%;
+    background-color: var(--blueBtn);
+    text-align: center;
+    justify-items: center;
+    color:white;
+    border-radius: 15px;
+    display: grid;
+    row-gap: 10px;
+    padding: 10px 0px;
+}
+.masPre div button{
+    border: none;
+    width: fit-content;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+button{
+    cursor: pointer;
+}
+footer{
+    margin-top:20px;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: var(--footer);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    color:white;
+}
+
+.pri img{
+    width: 50px;
+}
+@media (min-width: 768px) {
+    form{
+        width: 50%;
+    }
+    .bancos{
+        display: grid;
+        grid-template-rows: .2fr .8fr .5fr;
+        grid-template-columns: repeat(5,20%);
+    }
+    .bancos h2{
+        grid-column: 1/6;
+        grid-row: 1;
+
+    }
+    .bancos .b1{
+        grid-column: 1/6;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+    .bancos .b2{
+        grid-column: 1/6;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: left;
+    }
+    .bancos .b2 #mo{
+        text-align: right;
+    }
+    
+}
+@media (min-width:900px) {
+    #navMob{
+        grid-template-columns:repeat(5, 1fr);
+        grid-template-rows: 1fr ;
+        width: 100%;
+    }
+    .des{   
+        grid-column: 1/6;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 1fr ;
+        margin-top: 0;
+        align-items: center;
+    }
+    #btnC{
+        font-size: 20px;
+        padding: 6px 40px;
+    }
+    main{
+        margin-top: 86px;
+    }
+    .imgli{
+        display: none;
+    }
+    .ch{
+        display: none;
+    }
+    .ch:checked + .des{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows:1fr;
+    }
+    .ch:not(:checked) + .des{
+        display: grid;
+    }
+    #item1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #item3{
+        display: block;
+    }
+    .hero{
+        display: flex;
+    }
+    .sec{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    form{
+        width: 450px;
+        height: 580px;
+    }
+    .heaF h2{
+        font-size: 30px;
+        width: 400px;
+        line-height: 50px;
+    }
+    .heaF p{
+        font-weight: 900;
+        font-size: 10px;
+        width: 85%;
+    }
+    select{
+        padding: 5px;
+    }
+    input{
+        padding: 3.5px;
+    }
+    /* form{
+        
+    } */
+    .divR{
+        width: 449px;
+        height: 200px;
+    }
+    .ingreso{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: .2fr .8fr;
+        align-items: center;
+        row-gap: 10px
+    }
+    .text{
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }    
+    
+    .text p:last-child{
+        text-align: center;
+        width: 490px;
+    }
+    
+    .ingD{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .ingD img{
+        width: 500px;
+    }
+    .etapas h2{
+        font-weight: normal;
+    }
+    .eta{
+        justify-content: space-evenly;
+    }
+    .eta div{
+        row-gap: 20px;
+    }
+    .eta div p:last-child{
+        font-weight: 700;
+    }
+    .bancos h2{
+        font-weight: normal;
+    }
+    .preC:checked + .ver1{
+        margin-top: 30px;
+    }
+    .ver1 h2{
+        font-weight: 200;
+        font-size: 30px;
+    }
+    .tit{
+        font-style: italic;
+        width: 580px;
+    }
+    .p p:last-child{
+        width: 555px;
+    }
+    .masPre{
+        width: 100%;
+    }
+    .masPre div{
+        padding: 15px 0px;
+        row-gap: 25px;
+    }
+    .masPre div h2{
+        font-size: 35px;
+    }
+    .masPre div p{
+        font-size: 20px;
+    }
+    .masPre div button{
+        color:black;
+    }
+    footer{
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        padding: 30px 0px;
+    }
+}
+/* DESPLEGABLE ESTUDIO DE EJEMPLO */
+/* .c:checked{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3838/3838683.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c:not(:checked){
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/656/656979.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type=checkbox]:checked + .v1+ #vm1{
+    display: block;
+}
+input[type=checkbox]:not(:checked) + .v1{
+    display: none;
+}
+
+input[type=checkbox]:checked +.mostrar{
+    display: block;
+}
+
+input[type=checkbox]:not(:checked) + .mostrar{
+    display: none;
+} */
