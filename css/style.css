@@ -410,6 +410,8 @@ footer{
     }
     .hero{
         display: flex;
+        align-items: center;
+        height: 100vh;
     }
     .sec{
         flex-direction: row;
@@ -435,9 +437,6 @@ footer{
     input{
         padding: 3.5px;
     }
-    /* form{
-        
-    } */
     .divR{
         width: 449px;
         height: 200px;
@@ -493,10 +492,13 @@ footer{
     }
     .tit{
         font-style: italic;
-        width: 580px;
+        font-size: 20px;
+        width: 85%;
     }
     .p p:last-child{
-        width: 555px;
+        width: 900px;
+        text-align: center;
+        font-size: 20px;
     }
     .masPre{
         width: 100%;
@@ -520,35 +522,3 @@ footer{
         padding: 30px 0px;
     }
 }
-/* DESPLEGABLE ESTUDIO DE EJEMPLO */
-/* .c:checked{
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background-image: url(https://cdn-icons-png.flaticon.com/128/3838/3838683.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.c:not(:checked){
-    appearance: none;
-    width: 10px;
-    height: 10px;
-    background-image: url(https://cdn-icons-png.flaticon.com/128/656/656979.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-input[type=checkbox]:checked + .v1+ #vm1{
-    display: block;
-}
-input[type=checkbox]:not(:checked) + .v1{
-    display: none;
-}
-
-input[type=checkbox]:checked +.mostrar{
-    display: block;
-}
-
-input[type=checkbox]:not(:checked) + .mostrar{
-    display: none;
-} */
